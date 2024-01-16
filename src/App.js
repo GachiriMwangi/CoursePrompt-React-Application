@@ -3,7 +3,6 @@ import {useState} from 'react'
 import Header from './Courses/Header'
 import Courses from './Courses/Courses'
 import AddCourses from './Courses/AddCourses'
-//import Test from './Components/Test'
 function App() {
  
     const[business_courses, AlterCourse] = useState(
@@ -59,9 +58,6 @@ function App() {
         AlterCourse([...business_courses, newCourse])
         console.log("A new course has been added with id " + id)
       }
-
-
-//{business_courses.length > 0 ? <Courses business_courses={business_courses} onToggle={ToggleReminder} onDelete={DeleteCourse} /> : 'No courses available.'}
   return (
     <div className="container">
     
